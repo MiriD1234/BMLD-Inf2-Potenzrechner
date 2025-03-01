@@ -6,7 +6,7 @@ st.title("Potenzrechner")
 # Beschreibung
 st.write("""
 Diese App berechnet die Potenz einer Basis mit einem gegebenen Exponenten.
-Geben Sie die Werte unten ein und klicken Sie auf 'Berechnen', um das Ergebnis zu sehen.
+Geben Sie die Werte unten ein und klicken Sie auf **'Berechnen'**, um das Ergebnis zu sehen.
 """)
 
 # Eingabe der Basis und des Exponenten
@@ -18,17 +18,17 @@ exponent = st.number_input("Geben Sie den Exponenten ein:", value=1, min_value=0
 if st.button("Berechnen"):
     result = base ** exponent
 
-    # Anzeige des Ergebnisses
+    # Anzeige der Eingabewerte
     st.subheader("Eingabewerte")
     st.write(f"**Basis:** {base}")
     st.write(f"**Exponent:** {exponent}")
+    # Anzeige des Ergebnisses
+    st.subheader("Ergebnis")
+    st.success(f"$${base}^{exponent} = {result}$$")
+    st.balloons()
 
-    st.success(f"Das Ergebnis von {base} hoch {exponent} ist **{result}**.")
-    
-    # Anzeige des Ergebnisses als Zahl
-    st.metric(label="Ergebnis", value=result)
 else:
-    st.info("Bitte geben Sie die Werte ein und klicken Sie auf 'Berechnen'.")
+    st.info("Bitte geben Sie die Werte ein und klicken Sie auf **'Berechnen'**.")
 
 # Footer
-st.write("---")
+st.divider()
