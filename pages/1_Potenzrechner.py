@@ -9,13 +9,18 @@ Diese App berechnet die Potenz einer Basis mit einem gegebenen Exponenten.
 Geben Sie die Werte unten ein und klicken Sie auf **'Berechnen'**, um das Ergebnis zu sehen.
 """)
 
-# Eingabe der Basis und des Exponenten
-st.header("Eingabewerte")
-base = st.number_input("Geben Sie die Basis ein:", value=1, min_value=0, step=1)
-exponent = st.number_input("Geben Sie den Exponenten ein:", value=1, min_value=0, step=1)
+# Form für Eingaben und Berechnung
+with st.form("potenz_form"):
+    st.header("Eingabewerte")
+    
+    base = st.number_input("Geben Sie die Basis ein:", value=1, min_value=0, step=1)
+    exponent = st.number_input("Geben Sie den Exponenten ein:", value=1, min_value=0, step=1)
 
-# Berechnung der Potenz
-if st.button("Berechnen"):
+    # Submit-Button innerhalb des Forms
+    submit_button = st.form_submit_button("Berechnen")
+
+# Berechnung erfolgt nur, wenn der Button geklickt wurde
+if submit_button:
     result = base ** exponent
 
     # Anzeige der Eingabewerte
