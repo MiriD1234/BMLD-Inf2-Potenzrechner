@@ -36,7 +36,7 @@ else:
     st.info("Bitte geben Sie die Werte ein und klicken Sie auf **'Berechnen'**.")
 
 if st.button("Zurück zur Startseite"):
-    st.switch_page("start.py")
+    st.switch_page("Start.py")
 
 # Footer
 st.divider()
