@@ -10,5 +10,5 @@ st.success("Diese App berechnet die Potenz einer Basis mit einem gegebenen Expon
 - Miranda Downing (downimir@students.zhaw.ch)"""
 
 
-if st.button("Potenzrechner"):
+if st.button("Zum Potenzrechner"):
     st.switch_page("pages/1_Potenzrechner.py")

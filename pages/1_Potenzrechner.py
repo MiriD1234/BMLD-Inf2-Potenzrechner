@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Streamlit App
-st.title("Potenzrechner")
+st.title("🧮 Potenzrechner 🧮")
 
 # Beschreibung
 st.write("""
@@ -11,13 +11,13 @@ Geben Sie die Werte unten ein und klicken Sie auf **'Berechnen'**, um das Ergebn
 
 # Form für Eingaben und Berechnung
 with st.form("potenz_form"):
-    st.header("Eingabewerte")
+    st.header("🔢 Eingabewerte")
     
     base = st.number_input("Geben Sie die Basis ein:", value=1, min_value=0, step=1)
     exponent = st.number_input("Geben Sie den Exponenten ein:", value=1, min_value=0, step=1)
 
     # Submit-Button innerhalb des Forms
-    submit_button = st.form_submit_button("Berechnen")
+    submit_button = st.form_submit_button("🛠️ Berechnen")
 
 # Berechnung erfolgt nur, wenn der Button geklickt wurde
 if submit_button:
@@ -35,7 +35,7 @@ if submit_button:
 else:
     st.info("Bitte geben Sie die Werte ein und klicken Sie auf **'Berechnen'**.")
 
-if st.button("Start"):
+if st.button("Zurück zur Startseite"):
     st.switch_page("start.py")
 
 # Footer
