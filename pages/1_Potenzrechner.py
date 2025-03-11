@@ -1,4 +1,5 @@
 import streamlit as st
+from functions.potenzrechner import calculate_exponentiation
 
 # Streamlit App
 st.title("🧮 Potenzrechner 🧮")
@@ -21,7 +22,8 @@ with st.form("potenz_form"):
 
 # Berechnung erfolgt nur, wenn der Button geklickt wurde
 if submit_button:
-    result = base ** exponent
+    result_dict = calculate_exponentiation(base, exponent)
+    result = result_dict["exponentiation"]
 
     # Anzeige der Eingabewerte
     st.subheader("Eingabewerte")
