@@ -36,7 +36,7 @@ if submit_button:
     st.write(f"**Exponent:** {exponent}")
     # Anzeige des Ergebnisses
     st.subheader("Ergebnis")
-    st.success(f"$${base}^{exponent} = {result}$$")
+    st.success(f"$${base}^{{{exponent}}} = {result}$$")
     st.balloons()
 
     # update data in session state and save to persistent storage
