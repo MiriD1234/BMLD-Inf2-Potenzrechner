@@ -1,5 +1,6 @@
 import streamlit as st
 from functions.potenzrechner import calculate_exponentiation
+from utils.data_manager import DataManager
 
 # Streamlit App
 st.title("🧮 Potenzrechner 🧮")
@@ -34,6 +35,9 @@ if submit_button:
     st.success(f"$${base}^{exponent} = {result}$$")
     st.balloons()
 
+    # update data in session state and save to persistent storage
+    DataManager().append_record(session_state_key='data_df', record_dict=result)
+
 else:
     st.info("Bitte geben Sie die Werte ein und klicken Sie auf **'Berechnen'**.")
 
@@ -42,3 +46,4 @@ if st.button("Zurück zur Startseite"):
 
 # Footer
 st.divider()
+
