@@ -48,6 +48,9 @@ else:
 if st.button("Zurück zur Startseite"):
     st.switch_page("Start.py")
 
+if st.button("Zum den Potenzrechner-Daten"):
+    st.switch_page("pages/2_Potenzrechner-Daten.py")
+
 # Footer
 st.divider()
 
