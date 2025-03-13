@@ -20,4 +20,4 @@ st.dataframe(data_df)
 if st.button("Zurück zur Startseite"):
     st.switch_page("Start.py")
 if st.button("Zum Potenzrechner"):
-    st.switch_page("pages/1_Potenzrechner.py")
+    st.switch_page("pages/3_Potenzrechner-Grafik.py")
