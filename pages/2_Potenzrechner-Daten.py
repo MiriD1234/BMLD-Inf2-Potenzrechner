@@ -1,5 +1,9 @@
 import streamlit as st
 
+# === Login manager ===
+from utils.login_manager import LoginManager
+LoginManager().go_to_login('Start.py')  
+
 st.title('Potenzrechner Werte')
 
 data_df = st.session_state['data_df']
