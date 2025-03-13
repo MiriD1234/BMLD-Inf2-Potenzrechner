@@ -8,7 +8,7 @@ st.title('Potenzrechner Verlauf')
 
 data_df = st.session_state['data_df']
 if data_df.empty:
-    st.info('Keine Potenzrechner Daten vorhanden. Berechnen Sie die Potenz auf der Startseite.')
+    st.info('Keine Potenzrechner Daten vorhanden. Berechnen Sie die Potenz im Potenzrechner.')
     st.stop()
 
 # Weight over time

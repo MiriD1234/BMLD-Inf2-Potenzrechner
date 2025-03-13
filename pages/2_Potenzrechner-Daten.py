@@ -8,7 +8,7 @@ st.title('Potenzrechner Werte')
 
 data_df = st.session_state['data_df']
 if data_df.empty:
-    st.info('Keine Daten vorhanden. Berechnen Sie Ihre Potenz auf der Startseite.')
+    st.info('Keine Daten vorhanden. Berechnen Sie Ihre Potenz im Potenzrechner.')
     st.stop()
 
 # Sort dataframe by timestamp
