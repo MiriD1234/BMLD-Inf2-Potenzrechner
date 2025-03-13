@@ -2,10 +2,6 @@ import streamlit as st
 from functions.potenzrechner import calculate_exponentiation
 from utils.data_manager import DataManager
 
-# Initialisiere den Schlüssel 'data_df' im session_state, falls er nicht existiert
-if 'data_df' not in st.session_state:
-    st.session_state['data_df'] = []
-
 # Streamlit App
 st.title("🧮 Potenzrechner 🧮")
 
