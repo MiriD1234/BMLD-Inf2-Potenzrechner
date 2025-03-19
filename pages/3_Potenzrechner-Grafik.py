@@ -32,3 +32,6 @@ if st.button("Zum Potenzrechner"):
     st.switch_page("pages/1_Potenzrechner.py")
 if st.button("Zu den Potenzrechner-Daten"):
     st.switch_page("pages/2_Potenzrechner-Daten.py")
+
+# Footer
+st.divider()

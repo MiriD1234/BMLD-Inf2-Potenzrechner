@@ -23,3 +23,6 @@ if st.button("Zum Potenzrechner"):
     st.switch_page("pages/1_Potenzrechner.py")
 if st.button("Zur Potenzrechner-Grafik"):
     st.switch_page("pages/3_Potenzrechner-Grafik.py")
+
+# Footer
+st.divider()
