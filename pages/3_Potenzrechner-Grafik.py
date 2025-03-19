@@ -11,17 +11,17 @@ if data_df.empty:
     st.info('Keine Potenzrechner Daten vorhanden. Berechnen Sie die Potenz im Potenzrechner.')
     st.stop()
 
-# Weight over time
+# Base over time
 st.line_chart(data=data_df.set_index('timestamp')['base'], 
                 use_container_width=True)
-st.caption('Grundwert über Zeit')
+st.caption('Basis über Zeit')
 
-# Height over time 
+# Exponent over time 
 st.line_chart(data=data_df.set_index('timestamp')['exponent'],
                 use_container_width=True)
 st.caption('Exponent über Zeit')
 
-# BMI over time
+# Exponentiation over time
 st.line_chart(data=data_df.set_index('timestamp')['exponentiation'],
                 use_container_width=True)
 st.caption('Potenz über Zeit')
